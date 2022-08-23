@@ -25,7 +25,7 @@ class AppPages {
     GetPage(
         middlewares: [
           //only enter this route when authed
-          EnsureNotAuthedMiddleware(),
+          EnsureAuthMiddleware(),
         ],
       preventDuplicates: true,
       name: HomePage.path,
